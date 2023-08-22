@@ -1,0 +1,33 @@
+module maq_m (
+input maqm_clock,
+input maqh_reset,
+output [3:0] maqh_lsd,
+output [2:0] maqh_msd,
+output maqh_inc_hora);
+
+always_ff @(posedge maqm_clock or negedge maqh_reset)
+	if (!maqh_reset)
+		maqh_lsd <= 4'd0;
+	else
+	 	if (maqh_lsd == 4'd9)
+			maqh_lsd <= 4'd0;
+		else
+		maqh_lsd <= maqh_lsd + 4'd1;			
+			
+always_ff @(posedge maqm_clock or negedge maqh_reset)
+	if (!maqh_reset)
+		maqh_msd <= 3'd0;
+	else
+		if (maqh_lsd == 4'd9 && maqh_msd == 3'd5)
+			maqh_msd <= 3'd0;
+		else
+			if (maqh_lsd==4'd9)
+			maqh_msd <= maqh_msd + 3'd1;
+			else
+			maqh_msd <= maqh_msd;
+				
+always_comb
+	maqh_inc_hora <= (maqh_msd == 3'd5 && maqh_lsd == 4'd9);
+	
+	
+endmodule
