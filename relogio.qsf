@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY maq_m
+set_global_assignment -name TOP_LEVEL_ENTITY relogio
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:06:23  AUGUST 08, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -49,9 +49,14 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name SYSTEMVERILOG_FILE maq_m.sv
+set_global_assignment -name SYSTEMVERILOG_FILE maq_h.sv
+set_global_assignment -name SYSTEMVERILOG_FILE relogio.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE maq_h.sv
-set_global_assignment -name SYSTEMVERILOG_FILE relogio.sv
+set_global_assignment -name SYSTEMVERILOG_FILE divisor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE display_bcd.sv
+set_global_assignment -name SYSTEMVERILOG_FILE casca.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
