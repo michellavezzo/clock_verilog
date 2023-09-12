@@ -59,4 +59,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE display_bcd.sv
 set_global_assignment -name SYSTEMVERILOG_FILE casca.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

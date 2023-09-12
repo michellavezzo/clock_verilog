@@ -89,6 +89,7 @@ output logic [6:0] h_msd
 		.reset(main_reset),
 		.enable_1hz(enable1hz),
 		.inc_h(inc_hora),
+		.inc_m(inc_minuto),
 		.maqh_lsd(h_lsd_bcd),
 		.maqh_msd(h_msd_bcd),
 	);
