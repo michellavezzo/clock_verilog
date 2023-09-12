@@ -8,3 +8,5 @@ First Project for  STRUCTURED DESIGN OF INTEGRATED CIRCUITS discipline at UFPB. 
 
 
 https://sig-arq.ufpb.br/arquivos/20232200390b125557224d341662704c1/Metodologia_Top_Down_e_Projeto_01.pptx.pdf
+
+Apresentação: https://docs.google.com/presentation/d/1Oy-dsdT_-rm48v0Qt0V0dIrS-D5LyxBHKZlPAAGE0Gw/edit?usp=sharing
