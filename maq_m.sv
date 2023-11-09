@@ -3,9 +3,10 @@ input maqm_clock,
 input reset,
 input enable_1hz,
 input inc_min,
-output [3:0] maqm_lsd,
-output [2:0] maqm_msd,
-output maqh_inc_hora);
+output logic [3:0] maqm_lsd,
+output logic [2:0] maqm_msd,
+output logic maqh_inc_hora
+);
 
 always_ff @(posedge maqm_clock or negedge reset)
 	if (!reset)

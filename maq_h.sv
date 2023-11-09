@@ -4,8 +4,8 @@ input reset,
 input enable_1hz,
 input inc_h,
 input inc_m,
-output [3:0] maqh_lsd,
-output [2:0] maqh_msd
+output logic [3:0] maqh_lsd,
+output logic [2:0] maqh_msd
 );
 
 // so incrementa quando o output 

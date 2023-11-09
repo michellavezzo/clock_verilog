@@ -31,10 +31,10 @@ output logic [6:0] h_msd
 		.clk_out(enable1hz)
 	);
 	
-	logic [3:0] s_lsd_bcd;
-	logic [2:0] s_msd_bcd;
-	logic inc_hora;
-	logic inc_minuto;
+	logic [3:0] s_lsd_bcd = 4'd0;
+	logic [2:0] s_msd_bcd = 3'd0;
+	logic inc_hora = 4'd0;
+	logic inc_minuto = 4'd0;
 	
 
 	maq_s m_seg (
@@ -58,8 +58,8 @@ output logic [6:0] h_msd
 		.bcd_display_out(s_msd)
 	);
 	
-	logic [3:0] m_lsd_bcd;
-	logic [2:0] m_msd_bcd;
+	logic [3:0] m_lsd_bcd = 4'd0;
+	logic [2:0] m_msd_bcd = 3'd0;
 	maq_m m_min (
 		.maqm_clock(main_clock),
 		.reset(main_reset),
@@ -82,8 +82,8 @@ output logic [6:0] h_msd
 		.bcd_display_out(m_msd)
 	);
 	
-	logic [3:0] h_lsd_bcd;
-	logic [2:0] h_msd_bcd;
+	logic [3:0] h_lsd_bcd = 4'd0;
+	logic [2:0] h_msd_bcd = 3'd0;
 	maq_h m_hora (
 		.maqh_clock(main_clock),
 		.reset(main_reset),
@@ -91,9 +91,8 @@ output logic [6:0] h_msd
 		.inc_h(inc_hora),
 		.inc_m(inc_minuto),
 		.maqh_lsd(h_lsd_bcd),
-		.maqh_msd(h_msd_bcd),
+		.maqh_msd(h_msd_bcd)
 	);
-	
 	
 	// h lsd
 	display_bcd display_h_lsd(
@@ -103,7 +102,7 @@ output logic [6:0] h_msd
 	
 	// h msd
 	display_bcd display_h_msd(
-		.bcd_bcd_in({2'd0, h_msd_bcd}),
+		.bcd_bcd_in({1'b0, h_msd_bcd}),
 		.bcd_display_out(h_msd)
 	);
 	
