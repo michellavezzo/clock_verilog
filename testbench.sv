@@ -87,7 +87,7 @@ initial // voc� pode ter v�rias constru��es initial-begin-end, tal como
         reset=1'b0; // reset inativo. Valores default
         // #0 reset<=1'b0; // ap�s 20 passos de simula��o, o reset vai pra zero (ativo)
         #20 reset<=1'b1; // ap�s 20 passos de simula��o, o reset vai pra um (inativo)
-        for (int i=1;i<51200000;i=i+1) //loop com 16 pulsos de clock para testar a sequencia do contador
+        for (int i=1;i<5120000;i=i+1) //loop com 16 pulsos de clock para testar a sequencia do contador
             #1 clock<=~clock;  //a cada 10 passos de simula��o, o clock alterna
         $display ("PASSOU: Nao ha bugs!!");
         $stop; // a simula��o p�ra
@@ -95,6 +95,20 @@ initial // voc� pode ter v�rias constru��es initial-begin-end, tal como
 always @(posedge error_detected_1, error_detected_2, error_detected_3, error_detected_4, error_detected_5, error_detected_6) //sempre que houver borda positiva do houve erro
     begin
         $display ("FALHOU: Ha bugs!!"); //mensagem
+        // if to check which error was detected, if has more than one error, it will show both
+
+        if (error_detected_1 == 1'b1)
+            $display ("Erro: Segundo lsd");
+        if (error_detected_2 == 1'b1)
+            $display ("Erro: Segundo msd");
+        if (error_detected_3 == 1'b1)
+            $display ("Erro: Minuto lsd");
+        if (error_detected_4 == 1'b1)
+            $display ("Erro: Minuto msd");
+        if (error_detected_5 == 1'b1)
+            $display ("Erro: Hora lsd");
+        if (error_detected_6 == 1'b1)
+            $display ("Erro: Hora msd");
         #10; // aguarda um pouco
         $stop; // a simula��o p�ra (antes que a mensagem PASSOU apare�a!)
     end
