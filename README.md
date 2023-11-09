@@ -12,7 +12,7 @@ https://sig-arq.ufpb.br/arquivos/20232200390b125557224d341662704c1/Metodologia_T
 - Apresentação: https://docs.google.com/presentation/d/1Oy-dsdT_-rm48v0Qt0V0dIrS-D5LyxBHKZlPAAGE0Gw/edit?usp=sharing
 - Relatório: https://docs.google.com/document/d/1sfhE9NO7-pxY_WpgYsPGobKenIi9OQyMUHDMDFiJpFU/edit?usp=sharing
 
-# Part 2 - Functional verify (Modelsim)
+# Part 2 - Functional verification (Modelsim)
 ## Testbench implementation
 ![image](https://github.com/michellavezzo/clock_verilog/assets/38358577/266c9be6-3836-45b8-9369-ceca8b22657b)
 - Modelsim screenshot
