@@ -1,0 +1,7 @@
+db/
+incremental_db/
+output_files/
+simulation/
+hc_output/
+relogio_duv/
+transcript

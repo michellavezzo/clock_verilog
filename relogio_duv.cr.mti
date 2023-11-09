@@ -1,0 +1,72 @@
+C:/Users/miche/OneDrive/Documentos/Quartus/relogio/testbench.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/testbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio_modelo.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio_modelo.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module relogio_modelo
+
+Top level modules:
+	relogio_modelo
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/divisor.sv {1 {vlog -work work -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/divisor.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module divisor
+
+Top level modules:
+	divisor
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module relogio
+
+Top level modules:
+	relogio
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_s.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_s.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module maq_s
+
+Top level modules:
+	maq_s
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/output_checker.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/output_checker.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module output_checker
+
+Top level modules:
+	output_checker
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/display_bcd.sv {2 {vlog -work work -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/display_bcd.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module display_bcd
+** Warning: C:/Users/miche/OneDrive/Documentos/Quartus/relogio/display_bcd.sv(16): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	display_bcd
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_h.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_h.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module maq_h
+
+Top level modules:
+	maq_h
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio_duv.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/relogio_duv.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module relogio_duv
+
+Top level modules:
+	relogio_duv
+
+} {} {}} C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_m.sv {1 {vlog -work relogio_duv -sv -stats=none C:/Users/miche/OneDrive/Documentos/Quartus/relogio/maq_m.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module maq_m
+
+Top level modules:
+	maq_m
+
+} {} {}}
