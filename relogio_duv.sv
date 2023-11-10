@@ -9,7 +9,8 @@ output logic [6:0] HEX4,
 output logic [6:0] HEX5
 );
 
-relogio reg1(
+
+relogio_model_2 reg1(
 .main_clock(CLOCK_50),
 .main_reset(KEY),
 .s_lsd(HEX0),
@@ -19,6 +20,18 @@ relogio reg1(
 .h_lsd(HEX4),
 .h_msd(HEX5)
 );
+
+
+// relogio reg1(
+// .main_clock(CLOCK_50),
+// .main_reset(KEY),
+// .s_lsd(HEX0),
+// .s_msd(HEX1),
+// .m_lsd(HEX2),
+// .m_msd(HEX3),
+// .h_lsd(HEX4),
+// .h_msd(HEX5)
+// );
 
 endmodule
 
