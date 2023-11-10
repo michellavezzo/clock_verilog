@@ -21,3 +21,9 @@ https://sig-arq.ufpb.br/arquivos/20232200390b125557224d341662704c1/Metodologia_T
 
 - https://sig-arq.ufpb.br/arquivos/20230041383b3f583609168490c2c3365/Avaliao_Unidade_3_Concepo_-_2023.1.pdf
 - https://sig-arq.ufpb.br/arquivos/20230060367a45581203419a141f5fd0b/Introduo_a_Verificao_Funcional.pptx.pdf
+
+###### OBS: There is a known error at modelsim simulation. 
+- ![image](https://github.com/michellavezzo/clock_verilog/assets/38358577/028e75c5-69c6-418b-8d12-279a75773fb9)
+- For some reason, the first "run -all" detects a bug.
+- ![image](https://github.com/michellavezzo/clock_verilog/assets/38358577/7f0efee0-6b84-4581-aa68-03886cc86d8a)
+- Just click at continue to continue the expected simulation 
