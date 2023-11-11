@@ -47,6 +47,7 @@ output logic [6:0] h_msd
 	// 	.bcd_bcd_in({1'b0, s_msd_bcd}),
 	// 	.bcd_display_out(s_msd)
 	// );
+  
 	// seg lsd
 	display_bcd display_seg_lsd(
 		.bcd_bcd_in(s_lsd_bcd),

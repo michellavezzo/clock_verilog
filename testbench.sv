@@ -1,15 +1,14 @@
 // topo da hierarquia no testbench. Sem sinais de entrada ou saida.
 module testbench ();
 
-// sinais para est�mulo. Neste exemplo, definidos neste arquivo.
+// sinais para estímulo. Neste exemplo, definidos neste arquivo.
 
 logic clock;
 
 logic reset;
 
-//fios para interconex�o entre os m�dulos.
+//fios para interconexão entre os módulos.
 
-// logic [3:0]saida_duv, saida_modelo, saida_modelo2, saida_modelo3, saida_modelo4, saida_modelo5, saida_modelo6;
 // saidas duv
 logic [6:0] s_lsd;
 logic [6:0] s_msd;
@@ -28,7 +27,7 @@ logic [6:0] h_msd_model;
 
 logic error_detected_1, error_detected_2, error_detected_3, error_detected_4, error_detected_5, error_detected_6;
 
-// conexoes
+// conexões
 
 relogio_duv duv(
     .CLOCK_50(clock),
@@ -81,16 +80,16 @@ output_checker comparador_h_msd(
     .diff(error_detected_6)
     );
 
-initial // voc� pode ter v�rias constru��es initial-begin-end, tal como
-	begin // m�ltiplos always comb em um mesmo module	
+initial // você pode ter várias construções initial-begin-end, tal como
+	begin // múltiplos always comb em um mesmo module	
         clock=1'b0;
         reset=1'b0; // reset inativo. Valores default
-        // #0 reset<=1'b0; // ap�s 20 passos de simula��o, o reset vai pra zero (ativo)
-        #20 reset<=1'b1; // ap�s 20 passos de simula��o, o reset vai pra um (inativo)
+        // #0 reset<=1'b0; // após 20 passos de simulação, o reset vai pra zero (ativo)
+        #20 reset<=1'b1; // após 20 passos de simulação, o reset vai pra um (inativo)
         for (int i=1;i<5120000;i=i+1) //loop com 16 pulsos de clock para testar a sequencia do contador
-            #1 clock<=~clock;  //a cada 10 passos de simula��o, o clock alterna
+            #1 clock<=~clock;  //a cada 10 passos de simulação, o clock alterna
         $display ("PASSOU: Nao ha bugs!!");
-        $stop; // a simula��o p�ra
+        $stop; // a simulação para
     end
 always @(posedge error_detected_1, error_detected_2, error_detected_3, error_detected_4, error_detected_5, error_detected_6) //sempre que houver borda positiva do houve erro
     begin
@@ -110,6 +109,6 @@ always @(posedge error_detected_1, error_detected_2, error_detected_3, error_det
         if (error_detected_6 == 1'b1)
             $display ("Erro: Hora msd");
         #10; // aguarda um pouco
-        $stop; // a simula��o p�ra (antes que a mensagem PASSOU apare�a!)
+        $stop; // a simulação para (antes que a mensagem PASSOU apareça!)
     end
 endmodule
